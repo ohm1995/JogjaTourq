@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.handi.jogjatour.activities.BeritaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout3">
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#51d8c7"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Berita"
+                android:textColor="#FFFFFF"
+                android:textSize="28sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Wisata Yogyakarta"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/textViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:background="@drawable/berita1"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/txtjudul1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/imageView"
+        android:text="Candi Kalasan, Penghormatan bagi Jiwa Penuh Kebebasan"
+        android:textSize="12sp"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/txtisi1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Liputan6.com, Jakarta Jalanan siang itu sangat padat, truk dan bus saling salip. Saya yang hanya menaiki sebuah motor matik tua melaju dengan kecepatan seadanya, tak sampai 40 km/jam, mungkin. Tepat di pinggir jalan raya, saya dikejutkan oleh sosok bangunan berbatu"
+        android:textColor="#FFFFFF"
+        android:textSize="8.5sp"
+        android:layout_above="@+id/imageView2"
+        android:layout_alignStart="@+id/txtjudul2" />
+
+    <TextView
+        android:id="@+id/txtisi2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text='Liputan6.com, Kulonprogo - Pengelola Desa Wisata Purwosari, Kecamatan Girimulyo, Kabupaten Kulon Progo, Daerah Istimewa Yogyakarta, mengembangkan destinasi baru "Ayunan Langit Watu Jaran". Wahana Ayunan Langit Watu Jaran ini dikembangkan untuk mendukung Desa Wisata Purwosari.'
+        android:textColor="#FFFFFF"
+        android:textSize="8.5sp"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_alignStart="@+id/txtjudul2" />
+
+    <TextView
+        android:id="@+id/txtjudul2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtjudul1"
+        android:layout_alignTop="@+id/imageView2"
+        android:text="Berayun di Atas Tebing 6 Meter Saat Pagi, Berani Coba?"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:background="@drawable/berita2"
+        android:layout_below="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_marginTop="15dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/berita3"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignStart="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_alignStart="@+id/txtisi2"
+        android:text="Liputan6.com, Agus Eko Suranto, Juru Pelihara Situs Warungboto mengatakan, situs ini setiap harinya mulai banyak dikunjungi wisatawan lokal, terutama pelajar dan mahasiswa. Tiap hari setidaknya ada puluhan wisatawan yang datang berkunjung ke situs ini."
+        android:textColor="#FFFFFF"
+        android:textSize="8.5sp" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Berbentuk Unik, Situs Warungboto Jadi Objek Wisata Baru di Jogja"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_alignStart="@+id/textView15"/>
+
+</RelativeLayout>

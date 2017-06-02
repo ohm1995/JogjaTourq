@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android"
+    android:transitionOrdering="sequential">
+
+    <explode>
+        <targets>
+            <target android:targetClass="android.widget.TextView" />
+            <target android:targetClass="android.widget.FrameLayout" />
+            <target android:targetClass="android.widget.LinearLayout" />
+            <target android:targetClass="android.widget.ImageView" />
+        </targets>
+    </explode>
+
+    <transition class="id.handi.jogjatour.activities.ScaleTransition"
+        android:interpolator="@android:interpolator/overshoot">
+        <targets>
+            <target android:targetId="@id/mapFab" />
+        </targets>
+    </transition>
+
+</transitionSet>
